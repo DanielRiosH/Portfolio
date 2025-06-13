@@ -1,0 +1,108 @@
+:root {--color-fuente:#333;     /*Variables*/
+    --color-inverso: #fffffff6;
+    --color-concreto: rgba(255, 166, 0, 0.863);
+    --fuente-arial: Arial, Helvetica, sans-serif;
+    --morado: rgb(192, 7, 192);
+}
+
+  html {scroll-behavior: smooth;
+
+}
+
+
+body {color: var(--color-concreto);     /*Cuerpo de la página*/
+    background-image: url("../../../assets/img/fondo_pagina.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header {background-color:var(--color-fuente);   /*Cabecera*/
+    color:var(--color-concreto);
+    text-align: center;
+    border-style: solid;
+    border-color: var(--color-fuente);
+    text-shadow: 0 0 5px var(--morado);
+    
+}
+
+p {font-size: 16px;     /*Tamaño de parrafos*/
+
+}
+
+h1, h2, h3 {font-style: italic;
+    font: bolder;
+    text-align: center;
+}
+
+.izquierda {text-align: left;
+
+}
+
+.anaranjado {color: var(--color-concreto)
+
+}
+
+.destacado {color: #00ffff;
+    font-weight: bold;
+}
+
+p.destacado {color: #a52a2a;
+
+}
+
+
+
+main > a:hover {font-size: larger;  /*Hover de enlaces*/
+    font-weight: bolder;
+    background-color: #ffd700;
+    color: var(--color-fuente);
+    transform: scale(1.5);
+    scroll-behavior: smooth;
+}
+
+a {color: var(--morado);                                    /*********Enlaces**********/
+    text-decoration: none;
+    text-decoration: transparent;
+    transition: all .5s ease-in-out;
+    &:hover {background-color: var(--color-concreto);
+    }
+}
+
+nav.main a {color: var(--color-concreto)
+    var(--fuente-arial);
+    &:hover {background-color: var(--color-inverso);
+        padding-left: 2.5dvw;
+    }
+                            
+}
+
+nav.footer a {color: var(--color-inverso)
+    var(--fuente-arial);
+    &:hover {padding-left: 2.5dvw;
+    }
+}
+                                                        /*************************************/
+.grande {font-size: larger;
+
+}
+
+div img{
+    width: 30dvw;
+}
+
+#otrosIntereses {color: var(--color-concreto);      /*ID*/
+    text-shadow: 0 0 0.5px var(--color-inverso);
+    transition-timing-function: ease-out;
+}
+
+footer {background-color: var(--color-fuente);  /*Pie de página*/
+    color:var(--color-inverso);
+}
+
+.fascinate-inline-regular {     /*Fuente diferente*/
+  font-family: "Fascinate Inline", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
