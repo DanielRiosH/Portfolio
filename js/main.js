@@ -1,4 +1,4 @@
-// Animación al hacer scroll (estático y sin dependencia externa)
+// Animación al hacer scroll
 document.addEventListener("scroll", () => {
     document.querySelectorAll("section").forEach((section) => {
         if (section.getBoundingClientRect().top < window.innerHeight - 100) {
@@ -17,7 +17,7 @@ document.getElementById("modoOscuroBtn").addEventListener("click", function () {
         : document.body.classList.contains("modoOscuro") ? "Modo Claro" : "Modo Oscuro";
 });
 
-// Cambio de idioma usando hash (porque GitHub Pages no permite redirecciones dinámicas entre páginas)
+// Cambio de idioma usando hash 
 document.getElementById("toggleLanguage").addEventListener("click", () => {
     const currentLang = document.documentElement.lang;
     if (currentLang === "en") {
@@ -27,7 +27,7 @@ document.getElementById("toggleLanguage").addEventListener("click", () => {
     }
 });
 
-// Actualiza el idioma y fondo del botón según lang del <html>
+// Actualiza el idioma y fondo del botón según lang del HTML
 function updateButtonBackground() {
     const button = document.getElementById("toggleLanguage");
     const themeButton = document.getElementById("modoOscuroBtn");
